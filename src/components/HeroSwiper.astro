@@ -8,16 +8,20 @@ import { Picture } from "astro-imagetools/components";
     <!-- Slides -->
     <div class="swiper-slide">
       <Picture
+        preload="webp"
         src="/images/carousel/carousel.webp"
-        alt="A landscape image"
+        alt="A desktop image"
+        loading="eager"
         sizes="(min-width: 1024px) 1024px, 100vw"
       />
     </div>
     <div class="swiper-slide">
       <Picture
-        src="/images/carousel/carousel3.webp"
-        alt="A landscape image"
+        preload="webp"
         sizes="(min-width: 1024px) 1024px, 100vw"
+        src="/images/carousel/carousel3.webp"
+        loading="eager"
+        alt="A server image"
       />
     </div>
     ...
