@@ -10,7 +10,6 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 		<link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 		<link href="/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
 		<meta name="description" content="Astro description">
@@ -22,7 +21,6 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
-		<script src="/vendor/bootstrap/bootstrap.bundle.min.js" is:inline></script>
 		<script src="/vendor/swiper/swiper-bundle.min.js" is:inline></script>
 		<script src="/vendor/swiper/swiper-bundle.js" is:inline></script>
 		    <script is:inline>new Swiper('.swiper')</script>
