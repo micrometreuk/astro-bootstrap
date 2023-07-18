@@ -16,12 +16,14 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
 		<script src="/vendor/bootstrap/bootstrap.bundle.min.js" is:inline></script>
 		<script src="/vendor/swiper/swiper-bundle.min.js" is:inline></script>
+		    <script is:inline>new Swiper('.swiper')</script>
 	</body>
 </html>
 <style is:global>

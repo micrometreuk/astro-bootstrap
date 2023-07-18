@@ -1,21 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.jsx';
-import SwiperHero from '../components/SwiperHero';
+import HeroCarousel from '../components/HeroCarousel';
+import HeroSwiper from '../components/HeroSwiper.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<Button>Astro, React, Bootstrp and Cypress project</Button>
+		<HeroSwiper></HeroSwiper>
+		<HeroCarousel></HeroCarousel>
 	</main>
-		<SwiperHero></SwiperHero>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
 	}
 </style>

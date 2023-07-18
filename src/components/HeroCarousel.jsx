@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SwiperHero() {
+function HeroCarousel() {
   return (
     <>
           <div>
@@ -23,4 +23,4 @@ function SwiperHero() {
   );
 }
 
-export default SwiperHero;
+export default HeroCarousel ;
