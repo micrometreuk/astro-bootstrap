@@ -1,13 +1,40 @@
 ---
 // src/pages/swiper.astro
 ---
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-  </div>
-</div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script is:inline>new Swiper('.swiper')</script>
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      Slide 1
+      <img
+        src="/images/carousel/carousel.webp"
+        class="img-fluid"
+        alt="laptop "
+        loading="eager"
+      />
+    </div>
+    <div class="swiper-slide">
+      Slide 2
+      <img
+        src="/images/carousel/carousel3.webp"
+        class="img-fluid"
+        alt="server "
+        loading="eager"
+      />
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<script></script>
