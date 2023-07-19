@@ -1,34 +1,29 @@
 ---
-import { Picture } from "astro-imagetools/components";
 ---
+
+<!-- Slider main container -->
 
 <!-- Slider main container -->
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-      <Picture
-        preload="webp"
-        src="/images/carousel/carousel.webp"
-        alt="A desktop image"
-        loading="eager"
-        sizes="(min-width: 1024px) 1024px, 100vw"
-      />
+  <img
+    src="/images/carousel/carousel.webp"
+    class="img-fluid"
+    alt="laptop "
+    loading="eager"
+  />
     </div>
     <div class="swiper-slide">
-      <Picture
-        preload="webp"
-        sizes="(min-width: 1024px) 1024px, 100vw"
-        src="/images/carousel/carousel3.webp"
-        loading="eager"
-        alt="A server image"
-      />
+  <img
+    src="/images/carousel/carousel3.webp"
+    class="img-fluid"
+    alt="laptop "
+    loading="eager"
+  />
     </div>
     ...
   </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-scrollbar"></div>
 </div>
 <script></script>
